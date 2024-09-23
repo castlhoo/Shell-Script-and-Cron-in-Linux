@@ -98,5 +98,6 @@ This project demonstrates how to create directories using Shell scripts and auto
 ---
 
 Refactoring
+
 I want to make the number of directories want to start creating. So I added it.
 ![image](https://github.com/user-attachments/assets/a26bb3f8-d375-45ea-b5db-736e6e7dfc45)
