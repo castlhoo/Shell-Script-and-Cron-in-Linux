@@ -97,7 +97,36 @@ This project demonstrates how to create directories using Shell scripts and auto
 
 ---
 
-Refactoring
+# ✨ Refactoring
 
-I want to make the number of directories want to start creating. So I added it.
+This refactored shell script introduces an exciting new feature: the ability to specify the starting directory number when creating multiple directories. Previously, directories were always created starting from number 1, but now you have full control over where the numbering begins. This makes the script more flexible and useful in various scenarios.
+
+```bash
+# Get directory base name
+echo "Enter the base name for the directories to be created:"  
+read dir_name
+
+# Get the starting number for directory creation
+echo "Enter the number to start creating directories from:"  
+read start_number
+
+# Get the total number of directories to create
+echo "Enter the number of directories to be created:"  
+read dir_number
+
+# Create directories starting from the specified number
+for ((i=start_number; i<start_number+dir_number; i++))
+do
+    dir="${dir_name}${i}"
+
+    if [ -d "$dir" ]; then
+        echo "Directory '$dir' already exists."
+    else
+        mkdir "$dir"
+        echo "Directory '$dir' has been created."
+    fi
+done
+exit 0
+```
+
 ![image](https://github.com/user-attachments/assets/a26bb3f8-d375-45ea-b5db-736e6e7dfc45)
