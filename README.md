@@ -95,3 +95,8 @@ Add the following line to schedule the backup script to run every day at 9:00 AM
 
 This project demonstrates how to create directories using Shell scripts and automate the backup of files using Cron.
 
+---
+
+Refactoring
+I want to make the number of directories want to start creating. So I added it.
+![image](https://github.com/user-attachments/assets/a26bb3f8-d375-45ea-b5db-736e6e7dfc45)
